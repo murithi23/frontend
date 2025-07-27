@@ -5,7 +5,7 @@ const startCommand = process.platform === 'win32'
   ? 'start brave' 
   : 'brave-browser';
 
-exec(`${startCommand} http://localhost:3000`, (error) => {
+exec(`${startCommand} http://localhost:4000`, (error) => {
   if (error) {
     console.error(`Error launching Brave: ${error}`);
     return;
